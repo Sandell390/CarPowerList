@@ -59,7 +59,7 @@ export class CardataService {
         console.log("No new data");
         clearInterval(this.timer);
       }
-    }, 400);
+    }, 1000);
   }
 
 
