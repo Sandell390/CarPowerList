@@ -1,0 +1,33 @@
+<section class="ftco-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center mb-5">
+                <h2 class="heading-section">Car</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="table-wrap">
+                    <table class="table">
+                        <thead class="thead-primary">
+                            <tr>
+                                <th>#</th>
+                                <th>Model</th>
+                                <th>Quantity</th>
+                                <th>Change Quantity Percent</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let car of ObserverCar | async" class="fade-in">
+                                <th scope="row" class="alive">{{car.rank}}</th>
+                                <td class="alive">{{car.model}}</td>
+                                <td class="alive">{{car.quantity}}</td>
+                                <td class="alive">{{car.changeQuantityPercent}}%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
